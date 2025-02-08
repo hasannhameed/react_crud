@@ -76,15 +76,24 @@ const CrudApp = () => {
       {/* Items List */}
       <ul className="list-group">
         {items.map((item, index) => (
-          <li key={index} className="list-group-item d-flex justify-content-between">
+          <li
+            key={index}
+            className="list-group-item d-flex justify-content-between"
+          >
             <span>
               <strong>{item.title}</strong> - {item.description}
             </span>
             <div>
-              <button className="btn btn-warning btn-sm mx-1" onClick={() => handleEdit(index)}>
+              <button
+                className="btn btn-warning btn-sm mx-1"
+                onClick={() => handleEdit(index)}
+              >
                 Edit
               </button>
-              <button className="btn btn-danger btn-sm" onClick={() => handleDelete(index)}>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => handleDelete(index)}
+              >
                 Delete
               </button>
             </div>
