@@ -6,7 +6,9 @@ import "./App.css";
 // import Crud from "./components/reactprojects/crud";
 // import SimpleCrud from "./components/reactprojects/simplecrud";
 // import ImageSlider from "./components/reactprojects/imageSlider";
-import LoadMore from "./components/reactprojects/LoadMore";
+// import LoadMore from "./components/reactprojects/LoadMore";
+import menus from "./components/reactprojects/tree-view/data";
+import TreeView from "./components/reactprojects/tree-view/tree-view";
 
 function App() {
   return (
@@ -22,7 +24,8 @@ function App() {
         url={"https://picsum.photos/v2/list"}
         limit={"10"}
       /> */}
-      <LoadMore />
+      {/* <LoadMore /> */}
+      <TreeView menus={menus} />
     </div>
   );
 }
